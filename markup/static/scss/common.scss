@@ -1,0 +1,30 @@
+// Common styles of the project
+
+* {
+    box-sizing: border-box;
+    position: relative;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page {
+    background-color: #f5f5f5;
+}
+
+.wrap {
+    max-width: 1440px;
+    min-width: 375px;
+    width: 100%;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+
+        @media (max-width: 680px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+}
