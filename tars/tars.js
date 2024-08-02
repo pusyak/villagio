@@ -241,11 +241,12 @@ switch (cssPreprocName) {
         break;
     case 'scss':
     default:
+        const sass = require('gulp-sass')(require('sass'));
         tars.cssPreproc = {
             name: 'scss',
             ext: '{scss,sass}',
             mainExt: 'scss',
-            preprocessor: () => tars.require('gulp-sass')(tars.pluginsConfig['gulp-sass']),
+            preprocessor: () => sass(),
         };
         break;
 }
